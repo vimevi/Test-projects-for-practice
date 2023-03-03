@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="/style/reset.css" rel="stylesheet" />
+  <link href="/style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo-link" href="#">
+            <img class="logo-img" src="/images/logo.svg" alt="" />
+          </a>
+          <a class="log-in" href="#">Войти</a>
+          <a class="basket-link" href="#">
+            <img class="basket-img" src="/images/basket.svg" alt="" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="search-block">
+      <div class="container">
+        <form class="search-form" action="#">
+          <input class="search" type="text" placeholder="Поиск по ресторанам и кухням" />
+        </form>
+      </div>
+    </section>
+
+    <main class="main">
+      <div class="container">
+        <h2 class="main__title">Рестораны в Москве</h2>
+
+        <ul class="main__list">
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img1.jpg" alt="food" /></div>
+              <p class="food-name">Макдоналдс — Газетный</p>
+              <p class="food-type">₽₽ • Бургеры</p>
+              <p class="food-time">25 - 35 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img2.jpg" alt="food" /></div>
+              <p class="food-name">DimSum & Co — ЦДМ</p>
+              <p class="food-type">₽ • Японская • Китайская •
+                Азиатская</p>
+              <p class="food-time">40 - 50 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img3.jpg" alt="food" /></div>
+              <p class="food-name">ДвижОК — Манежная</p>
+              <p class="food-type">₽ • Американская •
+                Европейская</p>
+              <p class="food-time">35 - 45 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"> <img class="main__food-img" src="/images/food-img4.jpg" alt="food" /></div>
+              <p class="food-name">НЯ — NHA</p>
+              <p class="food-type">₽₽ • Вьетнамская</p>
+              <p class="food-time">30 - 40 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img5.jpg" alt="food" /></div>
+              <pp class="food-name">Точка Дзы — Цветной</p>
+                <p class="food-type">₽₽ • Вьетнамская</p>
+                <p class="food-time">30 - 40 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img6.jpg" alt="food" /></div>
+              <p class="food-name">Cinnabon</p>
+              <p class="food-type">Bar BQ Cafe — Манежная</p>
+              <p class="food-time">30 - 40 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"> <img class="main__food-img" src="/images/food-img7.jpg" alt="food" /></div>
+              <p class="food-name">PIZZELOVE</p>
+              <p class="food-type">₽ • Выпечка • Десерты • Капкейки</p>
+              <p class="food-time">25 - 35 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"> <img class="main__food-img" src="/images/food-img8.jpg" alt="food" /></div>
+              <p class="food-name">Zю кафе — Тверская</p>
+              <p class="food-type">₽₽ • Пицца</p>
+              <p class="food-time">15 - 25 мин</p>
+            </a>
+          </li>
+          <li>
+            <a class="main__item" href="#">
+              <div class="scale"><img class="main__food-img" src="/images/food-img9.jpg" alt="food" /></div>
+              <p class="food-name">Bar BQ Cafe — Манежная</p>
+              <p class="food-type">₽₽ • Японская</p>
+              <p class="food-time">25 - 35 мин</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo-section">
+          <a class="footer__logo" href="#"><img class="footer__logo-img" src="./images/white-logo.svg" alt="logo" /></a>
+        </div>
+        <section class="footer__info">
+          <div class="column-1">
+            <select class="lang-select" name="language" id="lang">
+              <option value="Russian">Русский</option>
+              <option value="Spanish">Español</option>
+              <option value="Englsih">English</option>
+              <option value="Chineesh">混蛋</option>
+              <option value="Japanese">おんどり</option>
+            </select>
+            <p class="footer__hashtag"><span>#</span>UberEats</p>
+            <div class="footer__social-media">
+              <a class="footer__social-item" href="page-2.html"><img src="/images/facebook.svg" alt="" /></a>
+              <a class="footer__social-item" href="#"> <img src="/images/twitter.svg" alt="" /></a>
+              <a class="footer__social-item" href="#"><img src="/images/instagram.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="column-2">
+            <a class="footer__info-text" href="">Об UberEats</a>
+            <a class="footer__info-text" href="">Станьте партнёром по доставке</a>
+            <a class="footer__info-text" href="">Станьте парнёром-рестораном</a>
+          </div>
+          <div class="column-3">
+            <a class="footer__info-text" href="">Все города</a>
+            <a class="footer__info-text" href="">Помощь</a>
+            <a class="footer__info-text" href="">Цены</a>
+            <a class="footer__info-text" href="">FAQs</a>
+          </div>
+        </section>
+        <section class="footer__download">
+          <a class="download" href="#"><img src="/images/appstore.svg" alt="" /></a>
+          <a class="download" href="#"><img src="/images/gplay.png" alt="" /></a>
+        </section>
+        <section class="footer__data">
+          <a class="footer__data-item" href="">© 2017 Uber Technologies Inc.</a>
+          <a class="footer__data-item" href="">Обработка персональных данных</a>
+          <a class="footer__data-item" href="">Пользовательское соглашение</a>
+        </section>
+      </div>
+      <button onclick="topFunction()" id="myBtn">
+        <img class="scroll-arrow__img" src="images/arrow.svg" alt="">
+      </button>
+    </footer>
+
+
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
