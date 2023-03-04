@@ -276,20 +276,42 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .box-name {
-}
-.container {
+  padding-top: 90px;
 }
 
 .box-name__inner {
-  position: relative;
+  border-radius: 10px;
+  background: #ffffff;
+  max-width: 432px;
+  padding: 38px 32px 38px 48px;
 }
 
-.box-name__img {
-  position: absolute;
-  top: 64px;
-  left: -26px;
+.box-name__title {
+  font-size: 24px;
+  margin-bottom: 54px;
 }
+
+.box-name__kitchen {
+  font-size: 14px;
+
+  padding-right: 80px;
+}
+
+.box-name__box {
+  display: flex;
+}
+
+.box-name__time {
+  font-size: 12px;
+  background: #262626;
+  border-radius: 16px;
+  padding: 9px 16px 8px;
+  color: #ffffff;
+  max-width: 94px;
+}
+
 .food {
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
   margin-bottom: 56px;
@@ -441,6 +463,9 @@ input::placeholder {
     display: block;
     column-count: 2;
   }
+  .food-grid__items {
+    gap: 16px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -462,10 +487,6 @@ input::placeholder {
     padding: 0;
     padding-bottom: 20px;
   }
-  .box-name__inner {
-    position: relative;
-    max-width: auto;
-  }
 }
 
 @media (max-width: 425px) {
@@ -475,10 +496,35 @@ input::placeholder {
   .header {
     position: relative;
   }
+  .box-name__box {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-name__kitchen {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .box-name__title {
+    text-align: center;
+  }
+  .food-grid__img {
+    width: 102px;
+  }
 }
 
 @media (max-width: 370px) {
   .basket-link {
     display: none;
+  }
+  .box-name__title {
+    font-size: 20px;
+  }
+  .box-name__inner {
+    padding: 24px 20px;
+  }
+  #myBtn {
+    height: 64px;
+    width: 64px;
   }
 }
